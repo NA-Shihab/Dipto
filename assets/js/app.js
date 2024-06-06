@@ -679,64 +679,59 @@
       }
       if ($(".team-slider").length) {
         var slider = $(".team-slider").slick({
-            infinite: true,
-            slidesToShow: 7, // Change to 7 slides
-            centerMode: true,
-            arrows: false,
-            centerPadding: '0',
-            autoplay: false,
-            loop: false,
-            responsive: [
-                {
-                    breakpoint: 1299,
-                    settings: {
-                        slidesToShow: 6, // Adjust to 6 slides for this breakpoint
-                    },
-                },
-                {
-                    breakpoint: 1199,
-                    settings: {
-                        slidesToShow: 5, // Adjust to 5 slides for this breakpoint
-                    },
-                },
-                {
-                    breakpoint: 992,
-                    settings: {
-                        slidesToShow: 4, // Adjust to 4 slides for this breakpoint
-                    },
-                },
-                {
-                    breakpoint: 767,
-                    settings: {
-                        slidesToShow: 3, // Adjust to 3 slides for this breakpoint
-                    },
-                },
-                {
-                    breakpoint: 580,
-                    settings: {
-                        slidesToShow: 2, // Adjust to 2 slides for this breakpoint
-                    },
-                },
-                {
-                    breakpoint: 480,
-                    settings: {
-                        slidesToShow: 1, // Adjust to 1 slide for this breakpoint
-                    },
-                },
-            ],
+          infinite: true,
+          slidesToShow: 5,
+          centerMode: true,
+          arrows: false,
+          centerMode: true,
+          centerPadding: '0',
+          autoplay: false,
+          loop: false,
+          responsive: [
+            {
+              breakpoint: 1299,
+              settings: {
+                slidesToShow: 4,
+              },
+            },
+            {
+              breakpoint: 1199,
+              settings: {
+                slidesToShow: 3,
+              },
+            },
+            {
+              breakpoint: 992,
+              settings: {
+                slidesToShow: 2,
+              },
+            },
+            {
+              breakpoint: 767,
+              settings: {
+                slidesToShow: 2,
+              },
+            },
+            {
+              breakpoint: 580,
+              settings: {
+                slidesToShow: 1,
+              },
+            },
+          ],
         });
-    
         slider.on('wheel', (function (e) {
-            e.preventDefault();
-    
-            if (e.originalEvent.deltaY < 0) {
-                $(this).slick('slickPrev'); // Corrected 'slickPrv' to 'slickPrev'
-            } else {
-                $(this).slick('slickNext');
-            }
+          e.preventDefault();
+
+          if (e.originalEvent.deltaY < 0) {
+            $(this).slick('slickPrv');
+          }
+          else {
+            $(this).slick('slickNext');
+          }
         }));
-    }
-    
+        
+      }
 
     },
     animations: function () {

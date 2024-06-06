@@ -9917,7 +9917,7 @@ a.drax-btn__2 .btn-text {
 .team .team-content .team-detail {
   position: relative;
   background: transparent;
-  height: 870px;
+  height: 800px;
 }
 @media (max-width: 992px) {
   .team .team-content .team-detail {
@@ -10032,7 +10032,7 @@ a.drax-btn__2 .btn-text {
   background: transparent;
   position: absolute;
   top: 0;
-  right: -135%;
+  right: -130%;
 }
 @media (max-width: 1199px) {
   .team .team-content .card .card-body {
